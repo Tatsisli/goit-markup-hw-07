@@ -41,6 +41,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .link {
@@ -108,7 +109,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -207,17 +208,19 @@ img {
 }
 /*---------------------MiSSION---------------------------*/
 .mission {
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .mission-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .mission-item {
-  width: 264px;
+  width: 100%;
 }
 .mission-item-icon-backgr {
-  width: 264px;
+  width: 100%;
   height: 112px;
   background-color: var(--light);
   display: flex;
@@ -234,6 +237,7 @@ img {
   line-height: 1.2;
   color: var(--dark);
   margin-bottom: 8px;
+  text-align: center;
 }
 .mission-item-suptitle {
 }
@@ -730,4 +734,30 @@ img {
   width: 169px;
   height: 56px;
   margin: 24px auto 0;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .mission {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  }
+  
+  @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .mission {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  
 }
