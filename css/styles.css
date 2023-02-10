@@ -244,6 +244,9 @@ img {
 .mission-item-suptitle {
 }
 /*---------------------PRACTICE---------------------------*/
+.practice {
+  display: none;
+}
 .practice-title {
   width: 323px;
   margin-left: auto;
@@ -759,8 +762,7 @@ img {
     /* display: flex;
       justify-content: space-between;
       flex-wrap: nowrap;
-      row-gap: 24px;
-      column-gap: 72px; */
+      */
     }
     .mission-item {
       width: calc((100% - 24px) / 2);
@@ -772,6 +774,9 @@ img {
   .container {
     max-width: 1200px;
   }
+  .practice {
+    display: flex;
+  }
   .mission {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -782,6 +787,9 @@ img {
       flex-wrap: nowrap;
       gap: 24px;
   }
+  .mission-item {
+    width: calc((100% - 72px) / 4);
+}
   .mission-item-icon-backgr {
     display: flex;
   }
