@@ -1,0 +1,68 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .container.container-mini {
+    max-width: 1200px;
+  }
+  .practice {
+    display: flex;
+  }
+  .mission {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .mission-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .mission-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .mission-item-icon-backgr {
+    display: flex;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-empl {
+    width: calc((100% - 72px) / 4);
+  }
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .customers-item {
+    width: 168px;
+  }
+  .projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .select-projects-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .projects-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+}

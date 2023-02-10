@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .container.container-mini {
+    max-width: 582px;
+  }
+  .mission {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .mission-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .mission-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team-empl {
+    width: calc((100% - 24px) / 2);
+  }
+  .customers-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .customers-list {
+    /* gap: 24px; */
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .projects {
+    padding-top: 64px;
+  }
+  .select-projects-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .projects-item {
+    width: calc((100% - 24px) / 2);
+  }
+}

@@ -264,6 +264,8 @@ img {
 /*---------------------TEAM---------------------------*/
 .team {
   background: var(--light);
+  padding-top: 96px;
+  padding-bottom: 128px;
 }
 .team-title {
   width: 162px;
@@ -273,16 +275,15 @@ img {
 }
 .team-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .team-empl {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 264px;
+  width: 100%;
   background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.07),
     0px 1px 1px rgba(46, 47, 66, 0.14), 0px 2px 1px rgba(46, 47, 66, 0.07);
@@ -335,7 +336,8 @@ img {
 }
 /*---------------------CUSTOMERS-------------------------*/
 .customers-section {
-  padding: 130px 156px 120px 156px;
+  padding-top: 111px;
+  padding-bottom: 81px;
 }
 .customers-title {
   width: 183px;
@@ -345,12 +347,14 @@ img {
 }
 .customers-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center; */
+  column-gap: 16px;
+    row-gap: 72px;
 }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 24px) / 2);
   height: 88px;
 }
 .customers-link {
@@ -375,12 +379,16 @@ img {
 }
 /*---------------------PROJECTS-------------------------*/
 .projects {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .select-projects-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  width: calc((100% - 48px) / 3);
+  column-gap: 16px;
+    row-gap: 24px;
+  margin-bottom: 48px;
 }
 .select-item {
 }
@@ -400,12 +408,12 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 .projects-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-  flex-basis: calc((100% - 48px) / 3);
+  width: 100%;
+  /* flex-basis: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms var(--cub-baz);
 }
 .projects-item:is(:hover, :focus) {
@@ -739,59 +747,4 @@ img {
   width: 169px;
   height: 56px;
   margin: 24px auto 0;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-  .mission {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  .mission-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
-    /* display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      */
-    }
-    .mission-item {
-      width: calc((100% - 24px) / 2);
-  }
-}
-  
-  
-  @media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-  .practice {
-    display: flex;
-  }
-  .mission {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-  .mission-list {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      gap: 24px;
-  }
-  .mission-item {
-    width: calc((100% - 72px) / 4);
-}
-  .mission-item-icon-backgr {
-    display: flex;
-  }
-  
 }

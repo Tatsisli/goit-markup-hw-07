@@ -1,0 +1,8 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
+  .customers-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
