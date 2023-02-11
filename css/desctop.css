@@ -1,9 +1,12 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1158px;
   }
   .container.container-mini {
     max-width: 1200px;
+  }
+  .hero-title {
+    margin-bottom: 48px;
   }
   .practice {
     display: flex;
@@ -54,7 +57,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     gap: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
   }
   .projects-list {
     display: flex;
