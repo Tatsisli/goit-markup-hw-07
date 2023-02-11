@@ -46,6 +46,12 @@
   }
   .contacts-item {
   }
+  .menu-open-btn {
+    display: none;
+  }
+  .menu-btn-icon {
+    display: none;
+  }
   .hero {
     background-image: var(--grad), url(../images/peopleoffice.jpg);
   }
@@ -105,8 +111,9 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    /* min-width: 563px; */
     gap: 24px;
-    margin-bottom: 64px;
+    margin-bottom: 72px;
   }
 
   .projects-list {
