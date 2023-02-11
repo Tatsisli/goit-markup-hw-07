@@ -5,8 +5,9 @@
   .container.container-mini {
     max-width: 1200px;
   }
+  
   .hero-title {
-    margin-bottom: 48px;
+    padding-bottom: 48px;
   }
   .practice {
     display: flex;

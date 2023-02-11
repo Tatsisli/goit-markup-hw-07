@@ -149,7 +149,7 @@ img {
   max-width: 100%;
   margin: auto;
   background-color: var(--dark);
-  background-image: var(--grad), url(../images/peopleoffice.jpg);
+  background-image: var(--grad), url(../images/darkbg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -157,10 +157,17 @@ img {
   padding-top: 112px;
   padding-bottom: 112px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--grad), url(../images/darkbg-mob-2x.jpg);
+  }
+}
 .hero-title {
   color: var(--white-color);
   width: 100%;
-  /* font-size: 30px; */
+  min-width: 318px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
