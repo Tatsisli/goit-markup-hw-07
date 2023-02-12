@@ -56,11 +56,88 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open-btn">
+        <!-- MOB-MENU -->
+        <button class="menu-open-btn" type="button" data-menu-open >
           <svg class="menu-btn-icon">
             <use href="./images/icons.svg#icon-mob-menu"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div>
+            <button class="mob-menu-close-btn" data-menu-close type="button">
+              <svg class="mob-menu-close-icon">
+                <use href="./images/icons.svg#icon-closeblack"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-link link">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-menu-contacts">
+              <ul class="mob-menu-contacts-list list">
+                <li class="mob-menu-contacts-item">
+                  <a href="tel:+110001111111" class="link mob-menu-tel-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link mob-menu-email-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-menu-social">
+              <ul class="mob-menu-social-list list">
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -174,8 +251,7 @@
               <img
                 src="./images/photomark.jpg"
                 alt="photo product designer"
-                srcset="./images/photomark.jpg 1x,
-                        ./images/photomark-2x.jpg 2x"
+                srcset="./images/photomark.jpg 1x, ./images/photomark-2x.jpg 2x"
                 width="264"
               />
               <div class="team-content">
@@ -217,8 +293,7 @@
               <img
                 src="./images/phototom.jpg"
                 alt="frontend developer"
-                srcset="./images/phototom.jpg 1x, 
-                        ./images/phototom-2x.jpg 2x"
+                srcset="./images/phototom.jpg 1x, ./images/phototom-2x.jpg 2x"
                 width="264"
               />
               <div class="team-content">
@@ -538,5 +613,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

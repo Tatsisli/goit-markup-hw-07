@@ -11,7 +11,7 @@
     display: flex;
     gap: 40px;
   }
-  .header-item {
+  .header-link {
     font-weight: 500;
     font-size: 16px;
     color: var(--dark);
@@ -22,7 +22,11 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
+  .header-item {
+    /* font-weight: 500;
+    font-size: 16px;
+    color: var(--dark); */
+  }
   .current {
     color: var(--focus-color);
     position: relative;
@@ -39,6 +43,7 @@
   }
   .contacts {
     display: flex;
+    justify-content: baseline;
   }
   .contacts-list {
     display: flex;
@@ -52,6 +57,7 @@
   .menu-btn-icon {
     display: none;
   }
+  /*---------------------HERO---------------------------*/
   .hero {
     background-image: var(--grad), url(../images/peopleoffice.jpg);
   }
