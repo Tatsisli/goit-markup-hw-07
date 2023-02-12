@@ -5,6 +5,9 @@
   .container.container-mini {
     max-width: 1200px;
   }
+  .header {
+    border-bottom: 1px solid var(--accent);
+  }
   
   .hero-title {
     padding-bottom: 48px;
