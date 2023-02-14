@@ -61,6 +61,7 @@ img {
   font-size: 36px;
   line-height: 1.11;
   color: var(--dark);
+  text-align: center;
 }
 .hidden-title {
   position: absolute;
@@ -75,8 +76,9 @@ img {
   overflow: hidden;
 }
 .btn {
-  font-weight: 500;
-  font-size: 16px;
+  font-family: inherit;
+  /* font-weight: 500;
+  font-size: 16px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
@@ -112,27 +114,30 @@ img {
 }
 
 .container {
-  /* width: 100%; */
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* margin-left: auto;
-  margin-right: auto; */
+  padding: 0 15px;
+  margin: 0 auto;
 }
 /*---------------------HEADER-------------------------*/
+.header {
+  border-bottom: 1px solid var(--accent);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .header-container {
   display: flex;
-  justify-content: space-between;
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 .header-logo {
+  /* display: inline-block; ПЕРЕВІРИТИ*/
   color: var(--dark);
   line-height: 1.33;
   margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
+  text-transform: uppercase;
 }
 .focus-logo {
   color: var(--primary-brand);
@@ -145,20 +150,21 @@ img {
 }
 /*---------------------MOB-MENU---------------------------*/
 .menu-open-btn {
-  display: block;
-  width: 32px;
-  height: 22px;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  cursor: pointer;
-  color: var(--dark);
   background-color: transparent;
   margin-left: auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  cursor: pointer;
+  color: var(--dark);
+  /* width: 32px;
+  height: 22px;
+  padding: 0; */
+  /* margin-top: 24px;
+  margin-bottom: 24px; */
 }
 .menu-btn-icon {
-  display: block;
   width: 32px;
   height: 22px;
   stroke: var(--dark);
@@ -169,12 +175,17 @@ img {
 .mob-menu {
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   z-index: 1;
   width: 100%;
   height: 100vh;
   background-color: var(--white-color);
-  /* transition: transform 250ms var(--cub-baz); */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: transform 250ms var(--cub-baz);
+}
+.container.container-menu {
+  max-width: 378px;
 }
 .mob-menu > .container {
   height: 100%;
@@ -182,6 +193,9 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto; /*додали скрол */
+}
+.mob-menu-nav {
+  padding-top: 16px;
 }
 .mob-menu-close-btn {
   display: block;
@@ -208,66 +222,55 @@ img {
   width: 8px;
   height: 8px;
 }
-.mob-menu-list {
+/* .mob-menu-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-}
+} */
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: var(--dark);
-}
-/* .mob-menu-link,
-.mob-menu-tel-link,
-.mob-menu-email-link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-} */
-.current {
-  color: var(--focus-color);
-  /* position: relative; */
+  transition: color 250ms var(--cub-baz);
 }
 .mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
 .mob-menu-contacts {
-  /* display: flex;
-  justify-content: baseline; */
-}
-.mob-menu-contacts-list {
-  display: block;
-  gap: 40px;
+  font-style: normal;
+  margin-bottom: 48px;
 }
 .mob-menu-contacts-item:not(:last-child) {
   margin-bottom: 40px;
 }
+/* .mob-menu-contacts-item > a:is(:hover, :focus) {
+  color: var(--accent-active-color);
+} */
+/* .mob-menu-contacts-list {
+  display: block;
+  gap: 40px;
+} */
 .mob-menu-tel-link {
-  /* display: block; */
   font-weight: 600;
   font-size: 28px;
   line-height: 1.11;
+  letter-spacing: 0.02;
   color: var(--primary-brand);
   margin-bottom: 40px;
+  transition: color 250ms var(--cub-baz);
 }
 .mob-menu-email-link {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: var(--text);
-}
-.mob-menu-social {
+  transition: color 250ms var(--cub-baz);
 }
 .mob-menu-social-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 56px;
-  padding-top: 48px;
-  padding-bottom: 40px;
 }
 .mob-menu-social-item {
   width: 40px;
