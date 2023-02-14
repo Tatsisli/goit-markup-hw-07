@@ -25,3 +25,24 @@
 .mob-menu-tel-link {
   font-size: 36px;
 }
+@media screen and (max-width: 767px) {
+  /*-------------MISSION----------------*/
+  .mission-item-title {
+    text-align: center;
+  }
+  /*-------------FOOTER----------------*/
+  .footer-logo,
+  .footer-social-title,
+  .footer-subscribe-title {
+    justify-content: center;
+  }
+  .footer-subscribe {
+  width: 100%;
+}
+  .footer-form {
+    gap: 16px;
+  }
+  .footer-form-btn {
+    margin: 0 auto;
+  }
+}
