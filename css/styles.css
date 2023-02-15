@@ -635,7 +635,7 @@ img {
   
   }
 .footer-form-email {
-  max-width: 100%;
+  width: 100%;
   margin: 0;
   height: 40px;
   padding: 8px 16px;
@@ -659,6 +659,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-btn {
+  
   padding: 8px 64px 8px 24px;
   width: 165px;
   border-radius: 4px;
@@ -694,8 +695,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 408px;
+  width: 408px;
   min-height: 576px;
+  padding: 24px;
+  overflow-y: scroll;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -712,7 +715,9 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--accent);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
   fill: currentColor;
@@ -723,9 +728,9 @@ img {
   color: var(--white-color);
 }
 .close-icon {
-  display: block;
+  /* display: block;
   margin: auto;
-  justify-content: center;
+  justify-content: center; */
   width: 8px;
   height: 8px;
 }
@@ -839,6 +844,7 @@ img {
   cursor: pointer;
 }
 .modal-send-btn {
+  display: block;
   color: var(--white-color);
   background-color: var(--primary-brand);
   padding: 16px 32px;
