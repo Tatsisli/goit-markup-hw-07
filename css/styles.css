@@ -434,20 +434,18 @@ img {
 
 /*---------------------CUSTOMERS-------------------------*/
 .customers-section {
-  padding-top: 111px;
-  padding-bottom: 81px;
+  padding: 96px 0;
 }
 .customers-title {
-  width: 183px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
   row-gap: 72px;
+  column-gap: 16px;
+  width: 100%;
 }
 .customers-item {
   width: calc((100% - 24px) / 2);
@@ -465,6 +463,8 @@ img {
   transition: border-color 250ms var(--cub-baz), color 250ms var(--cub-baz);
 }
 .customers-icon {
+  width: 110px;
+  height: 56px;
   fill: currentColor;
 }
 .customers-link:is(:hover, :focus) {
@@ -591,7 +591,7 @@ img {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  margin-top: 72px;
+  /* margin-top: 72px; */
 }
 .footer-social-list {
   display: flex;
@@ -720,12 +720,12 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-  fill: currentColor;
+  /* fill: currentColor; */
   transition: color 250ms var(--cub-baz), background-color 250ms var(--cub-baz);
 }
 .modal-close:is(:hover, :focus) {
   background-color: var(--focus-color);
-  color: var(--white-color);
+  fill: var(--white-color);
 }
 .close-icon {
   /* display: block;

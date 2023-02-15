@@ -1,15 +1,12 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 428px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 425px;
   }
-  .customers-item {
-    width: calc((100% - 24px) / 2);
-  }
+  
   .hero {
     background-image: var(--grad), url(../images/darkbg-tabl.jpg);
   }
+}
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -17,19 +14,45 @@
   .hero {
     background-image: var(--grad), url(../images/darkbg-tab-2x.jpg);
   }
-}
-  .hero-title {
-    width: 318px;
+  .hero-container {
+    max-width: 396px;
   }
 }
-.mob-menu-tel-link {
-  font-size: 36px;
-}
+
 @media screen and (max-width: 767px) {
+
+  .header-list {
+    display: none;
+  }
+  
+    .contacts {
+      display: none;
+    }
   /*-------------MISSION----------------*/
+  /* .mission-item-title {
+    text-align: center;
+  } */
+  .mission-item {
+    max-width: 396px;
+  }
+  .mission-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
   .mission-item-title {
     text-align: center;
   }
+  /*-------------CUSTOMERS----------------*/
+  /* .customers-item {
+    width: calc((100% - 24px) / 2);
+  } */
+  .customers-list {
+    justify-content: center;
+  }
+  .mini-container.customers-container,
+  .mini-container.footer-container {
+    max-width: 426px;
+  }
+  
   /*-------------FOOTER----------------*/
   .footer-logo,
   .footer-social-title,
@@ -48,5 +71,8 @@
   .modal {
     width: 100%;
     max-width: 392px;
+}
+.select-item:not(:last-child) {
+  margin-bottom: 48px;
 }
 }
