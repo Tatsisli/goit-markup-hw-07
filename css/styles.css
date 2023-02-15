@@ -76,8 +76,6 @@ img {
 }
 .btn {
   font-family: inherit;
-  /* font-weight: 500;
-  font-size: 16px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
@@ -99,11 +97,6 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-
-/* .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -130,7 +123,6 @@ img {
   align-items: center;
 }
 .header-logo {
-  /* display: inline-block; ПЕРЕВІРИТИ*/
   color: var(--dark);
   line-height: 1.33;
   margin-right: 76px;
@@ -363,13 +355,10 @@ img {
   padding-top: 96px;
   padding-bottom: 128px;
 }
-.container.mini-container {
+.container.container-mini {
   max-width: 290px;
 }
 .team-title {
-  /* width: 162px;
-  margin-left: auto;
-  margin-right: auto; */
   margin-bottom: 72px;
 }
 .team-list {
@@ -378,10 +367,6 @@ img {
   gap: 72px;
 }
 .team-empl {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   width: 100%;
   background: var(--white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.07),
@@ -591,7 +576,6 @@ img {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
-  /* margin-top: 72px; */
 }
 .footer-social-list {
   display: flex;
@@ -620,9 +604,6 @@ img {
   fill: var(--light);
 }
 /*---------------------FOOTER FORM---------------------------*/
-.footer-subscribe {
-}
-
 .footer-subscribe-title {
   display: flex;
   margin-bottom: 16px;
@@ -659,7 +640,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-btn {
-  
   padding: 8px 64px 8px 24px;
   width: 165px;
   border-radius: 4px;
