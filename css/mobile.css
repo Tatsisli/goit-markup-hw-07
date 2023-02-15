@@ -2,15 +2,13 @@
   .container {
     max-width: 425px;
   }
-  
   .hero {
     background-image: var(--grad), url(../images/darkbg-tabl.jpg);
   }
 }
-  @media (min-device-pixel-ratio: 2),
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  
   .hero {
     background-image: var(--grad), url(../images/darkbg-tab-2x.jpg);
   }
@@ -18,20 +16,14 @@
     max-width: 396px;
   }
 }
-
 @media screen and (max-width: 767px) {
-
   .header-list {
     display: none;
   }
-  
-    .contacts {
-      display: none;
-    }
+  .contacts {
+    display: none;
+  }
   /*-------------MISSION----------------*/
-  /* .mission-item-title {
-    text-align: center;
-  } */
   .mission-item {
     max-width: 396px;
   }
@@ -42,9 +34,6 @@
     text-align: center;
   }
   /*-------------CUSTOMERS----------------*/
-  /* .customers-item {
-    width: calc((100% - 24px) / 2);
-  } */
   .customers-list {
     justify-content: center;
   }
@@ -63,8 +52,8 @@
     justify-content: center;
   }
   .footer-subscribe {
-  width: 100%;
-}
+    width: 100%;
+  }
   .footer-form {
     gap: 16px;
   }
@@ -74,6 +63,5 @@
   .modal {
     width: 100%;
     max-width: 392px;
-}
-
+  }
 }

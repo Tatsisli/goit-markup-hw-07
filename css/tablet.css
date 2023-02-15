@@ -55,12 +55,12 @@
     padding-bottom: 108px;
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: var(--grad), url(../images/people-office-2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--grad), url(../images/people-office-2x.jpg);
+    }
   }
-}
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -68,7 +68,6 @@
     margin-bottom: 56px;
   }
   /*---------------------MiSSION---------------------------*/
-  
   .mission-list {
     display: flex;
   }
@@ -82,7 +81,7 @@
   }
   .team-empl {
     width: calc((100% - 24px) / 2);
-}
+  }
   /*---------------------CUSTOMERS-------------------------*/
   .customers-list {
     column-gap: 24px;
@@ -102,46 +101,41 @@
     padding-top: 64px;
     padding-bottom: 96px;
   }
-
   .select-projects-list {
     justify-content: center;
     margin-bottom: 64px;
   }
-
   .select-btn {
     padding: 12px 24px;
   }
-
   .projects-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
   }
-
   .projects-item {
     flex-basis: calc((100% - 24px) / 2);
   }
- /*---------------------FOOTER---------------------------*/
-
-.footer-container {
-  align-items: baseline;
-  justify-content: start;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.footer-action {
-  margin-right: 24px;
-}
-/*---------------------FOOTER FORM---------------------------*/
-.footer-form {
-  display: flex;
-  flex-direction: row;
-}
-.footer-form-email {
-  width: 264px;
-  margin-right: 24px;
-}
+  /*---------------------FOOTER---------------------------*/
+  .footer-container {
+    align-items: baseline;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-action {
+    margin-right: 24px;
+  }
+  /*---------------------FOOTER FORM---------------------------*/
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer-form-email {
+    width: 264px;
+    margin-right: 24px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .contacts {
@@ -162,23 +156,19 @@
     row-gap: 72px;
     column-gap: 24px;
   }
-
   .mission-item-icon-backgr {
     display: none;
   }
-
   .mission-item-icon {
     display: none;
   }
   .practice {
     display: none;
   }
-
   .footer-container {
     row-gap: 72px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     width: 552px;

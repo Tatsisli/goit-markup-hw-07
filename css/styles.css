@@ -21,7 +21,6 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-
 h1,
 h2,
 h3,
@@ -42,7 +41,6 @@ img {
   height: auto;
   width: 100%;
 }
-
 .link {
   font-style: normal;
   text-decoration: none;
@@ -104,7 +102,6 @@ img {
 .no-scroll {
   overflow: hidden; /*заборона скролу на body після mob-menu*/
 }
-
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -225,13 +222,6 @@ img {
 .mob-menu-contacts-item:not(:last-child) {
   margin-bottom: 40px;
 }
-/* .mob-menu-contacts-item > a:is(:hover, :focus) {
-  color: var(--accent-active-color);
-} */
-/* .mob-menu-contacts-list {
-  display: block;
-  gap: 40px;
-} */
 .mob-menu-tel-link {
   font-weight: 600;
   font-size: 28px;
@@ -287,8 +277,6 @@ img {
   background-position: center;
   background-size: cover;
   color: var(--white-color);
-  
-  
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -303,7 +291,6 @@ img {
 }
 .hero-title {
   color: var(--white-color);
-  /* width: 100%; */
   min-width: 318px;
   text-align: center;
   margin-left: auto;
@@ -392,7 +379,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
-  /* padding-bottom: 32px; */
 }
 .team-empl-social-item {
   width: 40px;
@@ -416,7 +402,6 @@ img {
   height: 16px;
   fill: var(--light);
 }
-
 /*---------------------CUSTOMERS-------------------------*/
 .customers-section {
   padding: 96px 0;
@@ -465,7 +450,6 @@ img {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  /* width: calc((100% - 48px) / 3); */
   column-gap: 24px;
   row-gap: 16px;
   margin-bottom: 48px;
@@ -556,11 +540,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-.footer-action {
-  /* align-items: center;
-  justify-content: center;
-  width: 268px; */
-}
 .footer-logo {
   display: flex;
   line-height: 1.17;
@@ -613,8 +592,7 @@ img {
 .footer-form {
   display: flex;
   flex-direction: column;
-  
-  }
+}
 .footer-form-email {
   width: 100%;
   margin: 0;
@@ -631,11 +609,9 @@ img {
   outline: none;
   transition: border-color var(--transition-dur-and-func);
 }
-
 .footer-form-email:focus {
   border-color: var(--focus-color);
 }
-
 .footer-form-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -655,7 +631,6 @@ img {
   bottom: 10px;
   fill: currentColor;
 }
-
 /*---------------------MODAL---------------------------*/
 .backdrop {
   position: fixed;
@@ -700,7 +675,6 @@ img {
   justify-content: center;
   margin-left: auto;
   margin-bottom: 24px;
-  /* fill: currentColor; */
   transition: color 250ms var(--cub-baz), background-color 250ms var(--cub-baz);
 }
 .modal-close:is(:hover, :focus) {
@@ -708,9 +682,6 @@ img {
   fill: var(--white-color);
 }
 .close-icon {
-  /* display: block;
-  margin: auto;
-  justify-content: center; */
   width: 8px;
   height: 8px;
 }
@@ -772,19 +743,15 @@ img {
   resize: none;
   transition: border-color 250ms var(--cub-baz);
 }
-
 .modal-input:focus {
   border-color: var(--primary-brand);
 }
-
 .modal-input:focus + .modal-input-icon {
   fill: var(--primary-brand);
 }
-
 .modal-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-comment:focus {
   border-color: var(--primary-brand);
 }
