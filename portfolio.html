@@ -29,15 +29,13 @@
           >
           <ul class="header-list list">
             <li class="header-item">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link link current">Studio</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link link current"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="header-link link">Portfolio</a>
             </li>
             <li class="header-item">
-              <a href="" class="header-link link">Contacts</a>
+              <a href="#contacts" class="header-link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -55,10 +53,92 @@
             </li>
           </ul>
         </address>
+        <!-- MOB-MENU -->
+        <button class="menu-open-btn" type="button" data-menu-open >
+          <svg class="menu-btn-icon">
+            <use href="./images/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container container-menu">
+          <div>
+            <button class="mob-menu-close-btn" data-menu-close type="button">
+              <svg class="mob-menu-close-icon">
+                <use href="./images/icons.svg#icon-closeblack"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-link link">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-menu-contacts">
+              <ul class="mob-menu-contacts-list list">
+                <li class="mob-menu-contacts-item">
+                  <a href="tel:+110001111111" class="link mob-menu-tel-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link mob-menu-email-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-menu-social">
+              <ul class="mob-menu-social-list list">
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-menu-social-item">
+                  <a href="" class="mob-menu-social-link link">
+                    <svg class="mob-menu-social-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <section class="projects section">
-      <div class="container cotainer-mini">
+      <div class="container projects-container">
         <h1 class="hidden-title">Projects classification</h1>
         <ul class="select-projects-list list">
           <li class="select-item">
@@ -243,7 +323,7 @@
         </ul>
       </div>
     </section>
-    footer class="footer">
+    <footer class="footer">
       <div class="container container-mini footer-container ">
         <div class="footer-action">
           <a href="./index.html" class="footer-logo logo link"

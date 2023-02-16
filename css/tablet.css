@@ -82,9 +82,6 @@
   /*---------------------CUSTOMERS-------------------------*/
   .customers-list {
     column-gap: 24px;
-    /* width: 552px;
-    margin-left: auto;
-    margin-right: auto; */
   }
   .customers-item {
     width: calc((100% - 48px) / 3);

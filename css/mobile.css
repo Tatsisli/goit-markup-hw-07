@@ -37,11 +37,16 @@
   .customers-list {
     justify-content: center;
   }
-  .mini-container.customers-container,
-  .mini-container.footer-container {
+  .container-mini.customers-container,
+  .container-mini.footer-container {
     max-width: 426px;
   }
   /*-------------PROJECTS----------------*/
+  .select-projects-list {
+    max-width: 300px;
+    margin-left: 0;
+    margin-right: auto;
+  }
   .select-item:not(:last-child) {
     margin-bottom: 48px;
   }
