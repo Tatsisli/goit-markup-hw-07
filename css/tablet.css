@@ -64,8 +64,8 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    width: 494px;
-    margin-bottom: 56px;
+    max-width: 500px;
+    margin-bottom: 40px;
   }
   /*---------------------MiSSION---------------------------*/
   .mission-list {
@@ -85,16 +85,12 @@
   /*---------------------CUSTOMERS-------------------------*/
   .customers-list {
     column-gap: 24px;
-    width: 552px;
+    /* width: 552px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
   }
   .customers-item {
-    width: 168px;
-    height: 88px;
-  }
-  .customers-icon {
-    width: 104px;
+    width: calc((100% - 48px) / 3);
   }
   /*---------------------PROJECTS---------------------------*/
   .projects {

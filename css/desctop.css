@@ -10,35 +10,33 @@
     padding-bottom: 120px;
   } */
 /*---------------------HEADER-------------------------*/
-.header-list {
-  margin-left: 76px;
-}  
+.header-navigation {
+  display: flex;
+}
+.header-item {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark);
+}
 .header-link,
 .contact-link {
   display: block;
-  min-width: 151px;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-  .contacts {
-    letter-spacing: 0.02em;
-  }
-  .contacts-list{
-    flex-direction: row;
-    gap: 40px;
-  }
-  .contacts-item {
-    line-height: 1.5;
-  }
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
   /*---------------------HERO---------------------------*/
-    .hero {
-      padding-top: 188px;
-      padding-bottom: 188px;
-      width: 1440px;
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
   }
-  .hero-title {
-    padding-bottom: 40px;
-  }
+  /* .hero-title {
+    margin-bottom: 40px;
+  } */
   /*---------------------MiSSION---------------------------*/
   .mission {
     padding-top: 120px;
@@ -53,11 +51,22 @@
   .mission-item-icon-backgr {
     width: 264px;
     height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
     background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .mission-item-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .mission-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 8px;
   }
   /*---------------------PRACTICE---------------------------*/
   .practice {
