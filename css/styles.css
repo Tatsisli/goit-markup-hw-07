@@ -270,11 +270,11 @@ img {
   width: 100%;
   padding-top: 112px;
   padding-bottom: 112px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   background-color: var(--dark);
   background-image: var(--grad), url(../images/darkbg-mob.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
   color: var(--white-color);
 }

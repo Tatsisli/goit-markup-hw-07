@@ -12,9 +12,6 @@
   .mob-menu {
     display: none;
   }
-  .header-navigation {
-    display: flex;
-  }
   .header-logo {
     margin-right: 120px;
     line-height: 1.17;
@@ -27,10 +24,9 @@
     line-height: 1.5;
   }
   .header-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 0 22px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
   .current {
     position: relative;
@@ -52,7 +48,8 @@
   /*---------------------HERO---------------------------*/
   .hero {
     background-image: var(--grad), url(../images/peopleoffice.jpg);
-    padding-bottom: 108px;
+    padding-top: 110px;
+    padding-bottom: 110px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -120,9 +117,6 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .footer-action {
-    margin-right: 24px;
-  }
   /*---------------------FOOTER FORM---------------------------*/
   .footer-form {
     display: flex;
@@ -161,12 +155,9 @@
   .practice {
     display: none;
   }
-  .footer-container {
-    row-gap: 72px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
-    width: 552px;
+    column-gap: 24px;
   }
 }
