@@ -23,6 +23,10 @@
   .contacts {
     display: none;
   }
+  .mob-menu-social-list {
+    justify-content: start;
+    gap: 56px;
+}
   /*-------------MISSION----------------*/
   .mission-item {
     max-width: 396px;
