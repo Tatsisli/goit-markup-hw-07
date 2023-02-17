@@ -12,6 +12,9 @@
   .mob-menu {
     display: none;
   }
+  .header-navigation {
+    display: flex;
+  }
   .header-logo {
     margin-right: 120px;
     line-height: 1.17;
@@ -24,15 +27,16 @@
     line-height: 1.5;
   }
   .header-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0 22px;
   }
   .current {
     position: relative;
   }
   .current::after {
-    content: "";
+    content: " ";
     position: absolute;
     left: 0;
     bottom: -1px;
@@ -41,9 +45,8 @@
     border-radius: 2px;
     background-color: var(--focus-color);
   }
-  .contacts {
+  .contacts-list {
     display: flex;
-    margin-left: auto;
   }
   /*---------------------HERO---------------------------*/
   .hero {
@@ -123,15 +126,18 @@
     width: 264px;
     margin-right: 24px;
   }
+  .modal {
+    width: 408px;
+  }
 }
 @media screen and (max-width: 1199px) {
-  .contacts {
+  .contacts-list {
     padding-top: 24px;
     padding-bottom: 10px;
     flex-direction: column;
     gap: 4px;
   }
-  .contact-item {
+  .contacts-item {
     font-size: 12px;
     line-height: 1.33;
   }

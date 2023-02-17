@@ -20,14 +20,10 @@
   .header-list {
     display: none;
   }
-  .contacts {
+  .contacts-list {
     display: none;
   }
-  /* .mob-menu-social-list {
-    justify-content: start;
-    gap: 56px;
-} */
-  /*-------------MISSION----------------*/
+/*-------------MISSION----------------*/
   .mission-item {
     max-width: 396px;
   }

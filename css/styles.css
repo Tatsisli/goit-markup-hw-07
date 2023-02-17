@@ -20,6 +20,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  
 }
 h1,
 h2,
@@ -31,7 +32,8 @@ p {
   margin: 0;
 }
 ul {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
 }
 img {
@@ -102,8 +104,12 @@ img {
   overflow: hidden; /*заборона скролу на body після mob-menu*/
 }
 .container {
-  padding: 0 15px;
-  margin: 0 auto;
+  padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 425px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*---------------------HEADER-------------------------*/
 .header {
@@ -113,27 +119,17 @@ img {
 }
 .header-container {
   display: flex;
-}
-.header-navigation {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .header-logo {
+  display: block;
   color: var(--dark);
-  line-height: 1.33;
-  margin-right: 76px;
+  line-height: 1.22;
   padding-top: 24px;
   padding-bottom: 24px;
-  text-transform: uppercase;
 }
 .focus-logo {
   color: var(--primary-brand);
-}
-.header-list {
-  display: none;
-}
-.contacts {
-  display: none;
 }
 /*---------------------MOB-MENU---------------------------*/
 .menu-open-btn {
@@ -312,25 +308,22 @@ img {
 /*---------------------MiSSION---------------------------*/
 .mission {
   padding-top: 96px;
-  padding-bottom: 96px;
-}
-.mission-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 72px;
-}
-.mission-item {
-  max-width: 100%;
 }
 .mission-item-icon-backgr {
   display: none;
 }
 .mission-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   color: var(--dark);
   margin-bottom: 8px;
+}
+.mission-item-suptitle {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 /*---------------------PRACTICE---------------------------*/
 .practice {
@@ -516,9 +509,6 @@ img {
   border-top: none;
   padding: 32px 0 32px 16px;
 }
-/*.projects-item:hover .projects-item-content {
-  border: 0.5px solid var(--light);
-}*/
 .projects-name {
   font-weight: 500;
   font-size: 20px;
@@ -652,15 +642,14 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 576px;
+  height: 90%;
+  max-height: 586px;
   padding: 24px;
   overflow-y: scroll;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
   transition: transform 250ms var(--cub-baz);
 }
 .backdrop.is-hidden .modal {
@@ -691,11 +680,7 @@ img {
 .modal-title {
   font-weight: 500;
   text-align: center;
-  margin-bottom: 20px;
   color: var(--dark);
-}
-.modal-form {
-  margin-top: 16px;
 }
 .modal-field {
   position: relative;
@@ -741,7 +726,7 @@ img {
   letter-spacing: 0.04em;
   color: #000000;
   outline: transparent;
-  padding: 10px;
+  padding: 8px 16px;
   resize: none;
   transition: border-color 250ms var(--cub-baz);
 }
@@ -756,8 +741,6 @@ img {
 }
 .modal-comment:focus {
   border-color: var(--primary-brand);
-}
-.modal-chek {
 }
 .chek-text {
   font-size: 12px;

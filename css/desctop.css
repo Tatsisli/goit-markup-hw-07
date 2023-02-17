@@ -6,26 +6,29 @@
     max-width: 1158px;
   }
 /*---------------------HEADER-------------------------*/
-.header-navigation {
-  display: flex;
+.header-logo {
+  line-height: 1.33;
+  margin-right: 76px;
+  padding-bottom: 28px;
 }
 .header-item {
   font-weight: 500;
   font-size: 16px;
   color: var(--dark);
 }
-.header-link,
-.contact-link {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .contacts-list {
-  display: flex;
   gap: 40px;
 }
-.current::after {
-  bottom: -1px;
+.header-link,
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 28px;
+}
+.contacts-item {
+  line-height: 1.5;
 }
   /*---------------------HERO---------------------------*/
   .hero {
@@ -61,8 +64,12 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--dark);
     margin-bottom: 8px;
+  }
+  .mission-item-suptitle {
+    font-weight: 400;
   }
   /*---------------------PRACTICE---------------------------*/
   .practice {
@@ -127,7 +134,6 @@
 .footer-container:nth-child(odd) {
   justify-content: space-between;
 }
-
 .footer-social {
   margin-left: 120px;
   margin-right: 80px;
