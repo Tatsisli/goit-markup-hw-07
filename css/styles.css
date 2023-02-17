@@ -162,12 +162,14 @@ img {
   width: 100%;
   height: 100vh;
   background-color: var(--white-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
   transition: transform 250ms var(--cub-baz);
 }
 .container.container-menu {
   max-width: 378px;
+}
+.container-menu {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .mob-menu > .container {
   height: 100%;
@@ -239,11 +241,14 @@ img {
 }
 .mob-menu-social-list {
   display: flex;
-  gap: 56px;
+  max-width: 328px;
 }
 .mob-menu-social-item {
-  width: 40px;
+  min-width: 40px;
   height: 40px;
+}
+.mob-menu-social-item:not(:last-child) {
+  margin-right: auto;
 }
 .mob-menu-social-link {
   width: 100%;
